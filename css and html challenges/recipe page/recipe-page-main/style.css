@@ -1,0 +1,173 @@
+@font-face {
+    font-family: Outfit-VariableFont;
+    src: url(../recipe-page-main/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: YoungSerif-Regular;
+    src: url(../recipe-page-main/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+body {
+    font-family: Outfit-VariableFont;
+    background-color: #f3e5d8;
+    padding: 6rem 25%;
+}
+
+/* Main */
+
+.main__wrapper {
+    background-color: white;
+    border-radius: 22px;
+    border: 1px solid rgb(255, 255, 255);
+    display: block;
+    font-weight: 300;
+    line-height: 2rem;
+    padding: 3rem;
+}
+
+
+
+.hero__image {
+    border-radius: 16px;
+    display: block;
+    margin-bottom: 2.75rem;
+    max-height: 100vh;
+    max-width: 100%;
+
+}
+
+/* Section */
+
+.section {
+    margin-bottom: 1.5rem;
+}
+
+.section--border-down {
+    border-bottom: 1px solid rgb(209, 221, 234);
+    padding: 1.25rem
+}
+
+.section__title {
+    color: #8c3a5e;
+    font-family: YoungSerif-Regular;
+    font-size: 1.75rem;
+    left: -5px;
+    margin-bottom: 1.5rem;
+    position: relative;
+
+}
+
+.section__description {
+    font-size: .85rem;
+    line-height: 1.5rem;
+}
+
+.section__list {
+    list-style-position: inside;
+
+}
+
+.section__list li::marker {
+    color: #8c3a5e;
+    font-weight: bold;
+}
+
+.section__list--position {
+    position: relative;
+    left: 10px;
+
+}
+
+.section__list--spacebetween {
+    margin-bottom: .60rem;
+}
+
+.section__table {
+    width: 100%;
+    line-height: 2.75rem;
+}
+
+.section__table-data {
+    color: #6e2f49;
+    font-weight: bold;
+}
+
+.section__table--position {
+    position: relative;
+    left: 30px;
+}
+
+/* Introduction */
+
+.title--introduction {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+
+}
+
+/* Preparation Time */
+
+.section--preparation-time {
+    background-color: #fff7fc;
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+.title-preparation-time {
+    color: #6e2f49;
+    font-family: Outfit-VariableFont;
+    font-size: 1.25rem;
+    font-weight: 500;
+    position: relative;
+}
+
+
+/* Footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+}
+
+.attribution__anchor {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 769px) {
+    body {
+        font-family: Outfit-VariableFont;
+        padding: 0;
+
+    }
+
+    .main__wrapper {
+        background-color: white;
+        border-radius: 0%;
+        line-height: 2rem;
+        padding: 0;
+    }
+
+    .hero__image {
+        border-radius: 0;
+        display: block;
+        margin-bottom: 2.75rem;
+        max-height: 100vh;
+        max-width: 100%;
+    }
+
+    .section {
+        padding: 2.4rem;
+    }
+
+    .title--introduction {
+        line-height: 2.6rem
+    }
+
+    .section--preparation-time {
+        margin: 2rem;
+
+    }
+}
